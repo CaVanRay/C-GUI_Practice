@@ -1,3 +1,4 @@
 
 to-do:
         - add music
+        - add jump sound effect
