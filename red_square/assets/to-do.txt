@@ -3,3 +3,4 @@ to-do:
         - add music
         - add jump sound effect
         - switch to camera view (scrolling)
+        - add multiple stages
