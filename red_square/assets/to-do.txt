@@ -5,3 +5,4 @@ to-do:
         - switch to camera view (scrolling)
         - add multiple stages
         - add enemy (yellow square)
+        - add goal (win condition)
