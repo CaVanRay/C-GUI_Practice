@@ -65,6 +65,10 @@ int main() {
     const float GRAVITY = 0.2f; // Gravity affecting the red square
     bool onGround = true; // To check if the red square is on the ground for jumping
 
+    if (bgMusic){
+        Mix_PlayMusic(bgMusic, -1);
+    }
+
     // **************************************** GAME LOOP **************************************** 
 
     while (running) {
