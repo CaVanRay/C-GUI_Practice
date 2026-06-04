@@ -62,7 +62,7 @@ int main() {
     SDL_Rect yellowPlatform = {1100, 850, 400, 40}; // Yellow platform on the right side of the screen
 
     float verticalVelocity = 0.0f; // Speed of the red square
-    const float GRAVITY = 0.2f; // Gravity affecting the red square
+    const float GRAVITY = 0.3f; // Gravity affecting the red square
     bool onGround = true; // To check if the red square is on the ground for jumping
 
     if (bgMusic){
@@ -95,6 +95,7 @@ int main() {
             horizontalVelocity = 5.0f;
         }
         if (keyboardState[SDL_SCANCODE_SPACE] && onGround) {
+            Mix_PlayChannel( -1, jumpSound, 0);
             verticalVelocity -= 12.0f; 
             onGround = false;
         }
